@@ -1,38 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Technologies Used
+
+- [![Next][next.js]][next-url]
+- [![React][react.js]][react-url]
+- [![Typescript][typescript]][typescript-url]
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running follow these simple example steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You need to install npm
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Installation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Set up a mongodb database on [https://www.mongodb.com](https://www.mongodb.com/)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/SamuelCody/auth-app.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Enter your DATABASE_URL and NEXTAUTH_URL in `.env` file in the root directory
+   ```js
+   DATABASE_URL = "ENTER DATABASE URL";
+   NEXTAUTH_URL = "http://localhost:3000";
+   ```
+5. `cd` into the project and create the collections in your database. Using the Prisma CLI tool, run the below in your terminal
+   ```js
+   npx prisma db push
+   ```
+6. Start the project using:
+   ```js
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[next-url]: https://nextjs.org/
+[react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[react-url]: https://reactjs.org/
+[typescript]: https://img.shields.io/badge/Typescript-20232A?style=for-the-badge&logo=typescript&logoColor=61DAFB
+[typescript-url]: https://www.typescriptlang.org/
