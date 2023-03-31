@@ -1,16 +1,16 @@
 import Head from "next/head";
-import LoginForm from "@/components/login-form";
+import RegisterForm from "@/components/register-form";
 
-export default function Home() {
+export default function Register() {
   return (
     <>
       <div>
         <Head>
-          <title>Login Page</title>
+          <title>Register Page</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main>
-          <LoginForm />
+          <RegisterForm />
         </main>
       </div>
     </>
