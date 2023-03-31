@@ -32,6 +32,7 @@ You need to install npm
    ```js
    DATABASE_URL = "ENTER DATABASE URL";
    NEXTAUTH_URL = "http://localhost:3000";
+   NEXTAUTH_SECRET="a random string";
    ```
 5. Open a terminal and `cd` into the project and create the collections in your database. Using the Prisma CLI tool, run the below in your terminal
    ```js
