@@ -24,7 +24,7 @@ You need to install npm
    ```sh
    git clone https://github.com/SamuelCody/auth-app.git
    ```
-3. Install NPM packages
+3. `cd` into the project and install NPM packages
    ```sh
    npm install
    ```
@@ -33,7 +33,7 @@ You need to install npm
    DATABASE_URL = "ENTER DATABASE URL";
    NEXTAUTH_URL = "http://localhost:3000";
    ```
-5. `cd` into the project and create the collections in your database. Using the Prisma CLI tool, run the below in your terminal
+5. Open a terminal and `cd` into the project and create the collections in your database. Using the Prisma CLI tool, run the below in your terminal
    ```js
    npx prisma db push
    ```
